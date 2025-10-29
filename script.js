@@ -59,11 +59,12 @@ document.getElementById('Form').addEventListener('submit', async (e) => {
   const formData = new FormData(e.target);
   const payload = Object.fromEntries(formData.entries());
 
-  await fetch('http://localhost:5678/webhook-test/8746d3d2-e4d7-466e-96cf-be1787a86322', {
+  await fetch('http://localhost:5678/webhook/8746d3d2-e4d7-466e-96cf-be1787a86322', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
   });
   console.log(payload);
 });
+
 
