@@ -1,0 +1,495 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.Wrapper2{
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+      font-family: 'Zen Dots', sans-serif;
+      /* margin-bottom: 10%; */
+
+}
+.Step1 h2{
+    margin-left: 5%;
+}
+.Step2 h2{
+    margin-left: 5%;
+}
+.Step3 h2{
+    margin-left: 5%;
+}
+.Step4 h2{
+    margin-left: 5%;
+}
+.Step5 h2{
+    margin-left: 5%;
+}
+.Step1Card img{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    margin-left: 5%;
+}
+.Step2Card img{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    margin-left: 5%;
+}
+.Step3Card img{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    margin-left: 5%;
+}
+.Step4Card img{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    margin-left: 5%;
+}
+.Step5Card img{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    margin-left: 5%;
+}
+.Step1Card{
+ width: 30vw;
+ margin-left: 5%;
+ height:10vh;
+ transition: all 1s;
+ border-radius: 50px;
+ background: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+ display: flex;
+ flex-direction: row;
+ color: #ffffff;
+ align-items: center;
+ font-size: x-large;
+ margin-bottom: 5%;
+}
+.Step2Card{
+ width: 30vw;
+ margin-left: 5%;
+ height: 10vh;
+ transition: all 1s;
+ border-radius: 50px;
+ background: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+ display: flex;
+ flex-direction: row;
+ color: #ffffff;
+ align-items: center;
+ font-size: x-large;
+ margin-bottom: 5%;
+}
+.Step3Card{
+ width: 90vw;
+ margin-left: 5%;
+ height: 10vh;
+ transition: all 1s;
+ border-radius: 50px;
+ background: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+ display: flex;
+ flex-direction: row;
+ color: #ffffff;
+ align-items: center;
+ font-size: x-large;
+}
+.Step4Card{
+ width: 90vw;
+ margin-left: 5%;
+ height: 10vh;
+ transition: all 1s;
+ border-radius: 50px;
+ background: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+ display: flex;
+ flex-direction: row;
+ color: #ffffff;
+ align-items: center;
+ font-size: x-large;
+}
+.Step5Card{
+ width: 90vw;
+ margin-left: 5%;
+ height: 10vh;
+ transition: all 1s;
+ border-radius: 50px;
+ background: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+ display: flex;
+ flex-direction: row;
+ color: #ffffff;
+ align-items: center;
+ font-size: x-large;
+}
+.Step1Card span{
+    margin-left: 5%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.Step2Card span{
+    margin-left: 5%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.Step3Card span{
+    margin-left: 5%;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.Step4Card span{
+    margin-left: 5%;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.Step5Card span{
+    margin-left: 5%;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.Step1Card.Visible{
+    width: 90vw; 
+}
+#Consultation.Visible{
+    opacity: 1;
+}
+.Step2Card.Visible{
+    width: 90vw; 
+}
+#Consultation2.Visible{
+    opacity: 1;
+}
+/* .Step3Card.Visible{
+    width: 90vw; 
+}
+#Consultation3.Visible{
+    opacity: 1;
+} */
+
+.TransitionUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1F3F2E;
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition-duration: 500ms;
+    transition-delay: 300ms;
+    z-index: 3;
+}
+.TransitionUp.Visible{
+    transform: scaleY(0);
+}
+.Step1Content{
+ height: 12vh;
+ margin-left: 5%;
+ color: #ffffff;
+ font-family: "Roboto", sans-serif;
+ width: 30vw;
+ transition: all 1s;
+ border-radius: 50px;
+ background-color: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+
+}  
+.Step2Content{
+ height: 15vh;
+ margin-left: 5%;
+ color: #ffffff;
+ font-family: "Roboto", sans-serif;
+ width: 30vw;
+ transition: all 1s;
+ border-radius: 50px;
+ background-color: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+
+}  
+.Step3Content{
+ height: 15vh;
+ margin-left: 5%;
+ color: #ffffff;
+ font-family: "Roboto", sans-serif;
+ width: 90vw;
+ transition: all 1s;
+ border-radius: 50px;
+ background-color: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+
+} 
+.Step4Content{
+ height: 15vh;
+ margin-left: 5%;
+ color: #ffffff;
+ font-family: "Roboto", sans-serif;
+ width: 90vw;
+ transition: all 1s;
+ border-radius: 50px;
+ background-color: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+
+} 
+.Step5Content{
+ height: 15vh;
+ margin-left: 5%;
+ color: #ffffff;
+ font-family: "Roboto", sans-serif;
+ width: 90vw;
+ transition: all 1s;
+ border-radius: 50px;
+ background-color: #1F3F2E;
+ /* box-shadow: 20px 20px 60px #52a076,
+               -20px -20px 60px #ffffff; */
+
+} 
+#Step1P{
+    padding:5%;
+    margin-top: 3%;
+    margin-left: 8%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: relative;
+}
+#Step2P{
+    padding:5%;
+    margin-top: 3%;
+    margin-left: 8%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: relative;
+}
+#Step3P{
+    padding:5%;
+    margin-top: 3%;
+    margin-left: 8%;
+    /* opacity: 0; */
+    transition: all 0.5s;
+    position: relative;
+}
+#Step4P{
+    padding:5%;
+    margin-top: 3%;
+    margin-left: 8%;
+    /* opacity: 0; */
+    transition: all 0.5s;
+    position: relative;
+}
+#Step5P{
+    padding:5%;
+    margin-top: 3%;
+    margin-left: 8%;
+    /* opacity: 0; */
+    transition: all 0.5s;
+    position: relative;
+}
+
+.Step1Content.Visible{
+    width: 90vw;
+    height: 12vh;
+}
+.Step2Content.Visible{
+    width: 90vw;
+    height: 15vh;
+}
+.Step3Content.Visible{
+    width: 90vw;
+    height: 15vh;
+}
+#Step1P.Visible{
+    opacity: 1;
+}
+#Step2P.Visible{
+    opacity: 1;
+}
+/* #Step3P.Visible{
+    opacity: 1;
+} */
+@keyframes slideright {
+    from{
+        transform: translateX(-120vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.Step3Card{
+    animation-name: slideright;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    animation-duration: 0.5s;
+}
+.Step3Content{
+    animation-name: slideright;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    animation-duration: 0.5s;
+}
+.Step4Card{
+    animation-name: slideright;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    animation-duration: 0.5s;
+}
+.Step4Content{
+    animation-name: slideright;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    animation-duration: 0.5s;
+}
+.Step5Card{
+    animation-name: slideright;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    animation-duration: 0.5s;
+}
+.Step5Content{
+    animation-name: slideright;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    animation-duration: 0.5s;
+}
+.Maintanance h2{
+    margin-left: 5%;
+    /* margin-top: 5%; */
+}
+.Maintanance h3{
+    padding: 5%;
+}
+.IncludedMaintanance {
+  width: 90vw;
+  height: 20vh;
+  background: rgb(223, 225, 235);
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin-left: 5%;
+ 
+}
+.Footer2{
+  grid-area: Footer;
+  height: 20vh;
+  /* background-color: #121212; */
+  position: relative;
+  margin-bottom: 10%;
+  font-family: "Roboto", sans-serif;
+}
+.Footer2 p{
+  margin-left: 5%;
+}
+.Footer2::after{
+  position: absolute;
+  content: "";
+  top: -5%;
+  left: 5%;
+  width: 90%;
+  height: 3%;
+  background-color: hsl(128, 73%, 17%);
+  border-radius: 1rem;
+}
+.EmailDetails2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+.PhoneDetails2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+.EmailDetails2 span{
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+.PhoneDetails2 span{
+  margin-left: 5% ;
+}
+@media (min-width:600px){
+    .Step1Card{
+        height: 15vh;
+    }
+    .Step1Card img{
+        transform: scale(0.5);
+    }
+    .Step1Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Step1Content p{
+        transform: translateY(-2vh);
+    }
+
+    .Step2Card{
+        height: 15vh;
+    }
+    .Step2Card img{
+        transform: scale(0.5);
+    }
+    .Step2Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .Step2Content p{
+        transform: translateY(-2vh);
+    }
+
+    
+    .Step3Card{
+        height: 15vh;
+        margin-bottom: 5%;
+    }
+    .Step3Card img{
+        transform: scale(0.5);
+    }
+    .Step3Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .Step3Content p{
+        transform: translateY(-2vh);
+    }
+
+    .Step4Card{
+        height: 15vh;
+        margin-bottom: 5%;
+    }
+    .Step4Card img{
+        transform: scale(0.5);
+    }
+    .Step4Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Step4Content p{
+        transform: translateY(-2vh);
+    }
+
+    .Step5Card{
+        height: 15vh;
+                margin-bottom: 5%;
+    }
+    .Step5Card img{
+        transform: scale(0.5);
+    }
+    .Step5Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Step5Content p{
+        transform: translateY(-2vh);
+    }
+
+}
