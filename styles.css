@@ -1,0 +1,937 @@
+:root {
+--main-red: #163E64;
+--main-orange: #C1E5F5;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+}
+
+.SideMenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60% ;
+    height: 100%;
+    /* border-left: 2px solid var(--main-red); */
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: -10px 0 15px -5px rgba(89, 89, 89, 0.5);
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin: right;
+}
+.SideMenu.Visible{
+    transform: scaleX(1);
+}
+.SideMenu span{
+    margin-left: 10%;
+}
+.SideMenu a{
+    text-decoration: none;
+    color: #000;
+}
+.MenuExit{
+    width: max;
+    /* border: 2px solid red; */
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#MenuExit{
+    transform: scale(1.5);
+    margin-right: 10%;
+}
+.MenuHome{
+    width: max;
+    height: 5vh;
+    border-bottom: 2px solid var(--main-orange);
+    margin-top: 45%;
+    display: flex;
+    align-items: center;
+}
+.MenuAboutUs{
+    width: max;
+    height: 5vh;
+    border-bottom: 2px solid var(--main-orange);
+    display: flex;
+    align-items: center;
+    overflow-x: visible;
+}
+.MenuServices{
+    width: max;
+    height: 5vh;
+    border-bottom: 2px solid var(--main-orange);
+    display: flex;
+    align-items: center;
+}
+.MenuContact{
+    width: max;
+    height: 5vh;
+    border-bottom: 2px solid var(--main-orange);
+    display: flex;
+    align-items: center;
+}
+.Header{
+    width: max;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Nav a{
+    text-decoration: none;
+    color: #000;
+}
+#Menu{
+    transform: scale(0.5);
+}
+#NavTabs{
+    border-bottom: 2px solid var(--main-orange);
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+    cursor: pointer;
+}
+#NavTabs:hover{
+    border-bottom: 2px solid var(--main-red);
+}
+
+.Header::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2%;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--main-red), var(--main-orange));
+}
+.Header img{
+    width: 150px;
+    height: 70px;
+
+}
+.Intro{
+    width: max;
+    height: 50vh;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'Left Right'
+    ;
+    overflow: hidden;
+}
+.IntroLeft{
+    grid-area: Left;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.IntroRight{
+    grid-area: Right;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid orange; */
+    background-image: url(Images/MountainV2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+      mask-image: radial-gradient(
+    circle,
+    black 5%,
+    transparent 100%
+  );
+
+}
+.introHeading{
+    width: 70%;
+    height: 35%;
+    margin: 5% 0 0 5%;
+
+}
+#IntroHeading{
+        font: 900;
+    font-size: xx-large;
+    font-family: 'Alfa Slab One', cursive;;
+}
+
+
+#introText{
+    width: 70%;
+    height: 35%;
+    margin: 0% 5%;
+    font: 900;
+}
+#BtnGetStarted{
+    margin-top: 3% ;
+    padding: 2% 6% 2% 6%;
+    background-image: linear-gradient(to top right, var(--main-red), var(--main-orange));
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+    /* font-size: small;
+    font-family: 'Alfa Slab One', cursive;; */
+}
+.Identifier{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    /* background-color: #CB0101; */
+    border-radius: 50%;
+    bottom: 17.545%;
+    left: 0%;
+}
+.Services{
+    width: max;
+    height: 40vh;
+    /* border: 2px solid black; */
+    position: relative;
+
+}
+.ServicesText{
+    width: 30%;
+    height: fit-content;
+    position: relative;
+
+    margin: 0 auto;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Alfa Slab One', cursive;;
+    letter-spacing: 0.05rem;
+}
+.ServicesText::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    top: 50%;
+    left: 0;
+    background-color: rgba(89, 89,89, 0.5)
+}
+.ServicesText::before{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    top: 50%;
+    right: 0;
+    background-color: rgba(89, 89, 89, 0.5)
+}
+.ServicesContainer{
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Box1,.Box2,.Box3{
+    width: 30%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 8px 6px rgba(89, 89, 89, 0.5);
+    position: relative;
+}
+.Box1::after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    /* height: 10%; */
+    aspect-ratio: 1/1;
+    width: 10%;
+    background-image: -webkit-repeating-radial-gradient(var(--main-orange), var(--main-red));
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px 8px var(--main-orange);
+}
+.Box2::after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    /* height: 10%; */
+    aspect-ratio: 1/1;
+    width: 10%;
+    background-image: -webkit-repeating-radial-gradient(var(--main-orange), var(--main-red));
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px 8px var(--main-orange);
+}
+.Box3::after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    /* height: 10%; */
+    aspect-ratio: 1/1;
+    width: 10%;
+    background-image: -webkit-repeating-radial-gradient(var(--main-orange), var(--main-red));
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px 8px var(--main-orange);
+}
+.Box3::before{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 62%);
+    /* height: 10%; */
+    aspect-ratio: 1/1;
+    width: 8%;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 50%;   
+}
+.Box2::before{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 62%);
+    /* height: 10%; */
+    aspect-ratio: 1/1;
+    width: 8%;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 50%;   
+}
+.Box1::before{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 62%);
+    /* height: 10%; */
+    aspect-ratio: 1/1;
+    width: 8%;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 50%;   
+}
+.Image1, .Image2, .Image3{
+    width: 40%;
+    height: 50%;
+    /* border: 2px solid black; */
+    margin: 5% auto;
+}
+.Image1{
+    background-image: url(NewAssets/Code.svg);
+    background-position: center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+}
+.Image2{
+    background-image: url(NewAssets/AI.svg);
+    background-position: center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+}
+.Image3{
+    background-image: url(NewAssets/Authorized.svg);
+    background-position: center;
+    background-size: 150%; 
+    background-repeat: no-repeat;  
+}
+#BoxText{
+    font: 900;
+    font-size: small;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+}
+.Services p{
+    text-align: center;
+}
+.WhyUs{
+    width: max;
+    height: 50vh;
+    /* border: 2px solid black; */
+    /* background-color: #c1e5f5b5; */
+}
+.WhyUsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+.WhyUsContainer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    width: 100%;
+    height: 90%;
+    margin-top: 10%;
+}
+.Bullet1, .Bullet2, .Bullet3, .Bullet4{
+    width: 50%;
+    height: 15%;
+    /* border: 2px solid black; */
+    margin-top: 3% ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.WhyUsContainer img{
+    transform: scale(2);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.WhyUs .ServicesText{
+    transform: translateY(100%);
+}
+
+.Footer{
+    background-color: #163E64;
+    color: rgb(188, 186, 186);
+    margin-top: 5%;
+}
+.Footer p{
+    margin-left: 2%;
+}
+.Footer span{
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.Mission{
+    width: 60%;
+    height: fit-content;
+
+    margin: 0 auto;
+}
+.Contact{
+    width: 60%;
+    height: fit-content;
+
+    margin: 0 auto;
+}
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterServices{
+    width: 60%;
+    height: fit-content;
+
+    margin: 0 auto;
+}
+.FooterServices span{
+    width: max-content;
+    border-bottom: 2px solid var(--main-orange);
+}
+.FSContainer{
+    display: flex;
+    flex-direction: column;
+}
+.CopyRight{
+    height: 30vh;
+
+    width:60%;
+    margin: 0 auto;
+}
+.CopyRightContainer{
+    aspect-ratio: 1/1;
+    height: 100%;
+    /* margin: auto auto; */
+    /* text-align: center; */
+}
+.ImageContainer{
+    width: 80%;
+    height: 80%;
+
+    /* margin: 0 auto; */
+    background-image: url(NewAssets/logoV2White.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* SERVICES PAGE */
+#ServicesHeadingProductivity{
+    font: 900;
+    font-size: x-large;
+    font-family: 'Alfa Slab One', cursive;
+    margin-left: 10%;
+}
+#ServicesTextProductivity{
+    margin-left: 10%;
+}
+.ServicesIntro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'ServicesLeft ServicesRight'
+    ;
+    /* height: 35vh; */
+    height: fit-content;
+}
+.Right{
+    width:200px;
+    aspect-ratio: 1/1;
+    /* border: 2px solid red; */
+    background-image: url(NewAssets/ProductivitySVG.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.ServicesRight{
+    grid-area: ServicesRight;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ServicesLeft{
+    grid-area: ServicesLeft;
+    /* border: 2px solid blue; */
+    display: flex;
+    /* align-items: center; */
+    margin-left: 5%;
+    flex-direction: column;
+}
+#productivityLicense{
+        font: 600;
+    font-size: medium;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+}
+.LicenseContainer1, .AntivirusContainer{
+    width: 70%;
+    height: fit-content;
+    /* border: 2px solid black; */
+    margin: auto auto;
+}
+
+.Docs{
+    width: 100%;
+    height: fit-content;
+    border-radius: 2rem;
+    background-color: #fcfdfd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1),
+            0 8px 16px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+    padding: 2%;
+
+}
+.LicenseImage{
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin-left: 10%;
+}
+.LicenseText{
+    font-weight: 600;
+    margin-left: 10%;
+}
+.AntiVirusTextContainer{
+    
+    width: max;
+    height: 60%;
+    border: 2px solid white;
+    margin-top: 7%;
+}
+.AntivirusHeading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 30vh;
+    /* border: 2px solid black; */
+    grid-template-areas: 
+    "AntiVirusLeft AntiVirusRight"
+    ;
+
+}
+.AntiVirusImage{
+    grid-area: AntiVirusLeft;
+      width:250px;
+    aspect-ratio: 1/1;
+    /* border: 2px solid red; */
+    background-image: url(NewAssets/shield.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto auto;
+}
+.AntiVirusText{
+    grid-area: AntiVirusRight ;
+    flex-direction: column;
+    align-items: center;
+}
+#AntiVirusText{
+        font: 900;
+    font-size: x-large;
+    font-family: 'Alfa Slab One', cursive;
+    display: flex;
+    align-items: center;
+}
+.WebImage{
+    width: 200px;
+    aspect-ratio: 1/1;
+    margin: auto auto;
+    background-image: url(NewAssets/global.svg);
+        background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.WordpressCard{
+    background-color: var(--main-red);
+    width: 80%;
+    /* height: 50vh; */
+    margin: 0 auto;
+    border-radius: 2rem ;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20% ;
+    margin-bottom: 5%;
+}
+.CardWrapper{
+    margin-bottom: 5%;
+}
+.CustomCard{
+    background-color: var(--main-red);
+    width: 80%;
+    /* height: 50vh; */
+    margin: 0 auto;
+    border-radius: 2rem ;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20% ;
+    margin-bottom: 10%;
+}
+.CustomCard::after{
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    width: 70%;
+    border-bottom-left-radius: 2rem;
+    content: 'Custom Website';
+    background-color: var(--main-orange);
+    height: 15%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+            font: 900;
+    font-size: medium;
+    font-family: 'Alfa Slab One', cursive;
+}
+.WordpressCard::after{
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    width: 70%;
+    border-bottom-left-radius: 2rem;
+    content: 'Wordpress Website';
+    background-color: var(--main-orange);
+    height: 15%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+            font: 900;
+    font-size: medium;
+    font-family: 'Alfa Slab One', cursive;
+}
+.Item{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    
+}
+.ItemImage{
+    width: 30px;
+    aspect-ratio: 1/1;
+    margin-right: 10%;
+}
+.ItemText{
+    font-weight: 900;
+    font-size: medium;
+    color: var(--main-orange);
+}
+.KnowYourProtection{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
+    height: fit-content;
+}
+.ProtectionImage{
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid black; */
+    margin: auto auto;
+    background-image: url(NewAssets/locklogo.svg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.ProtectionText{
+    margin-left: 10%;
+}
+#ProtectionTextHeading{
+    font-weight: 300;
+    font-size: medium;
+    font-family: 'Alfa Slab One', cursive;
+}
+.WebArticle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: max;
+    
+}
+.QuestionMark{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid black; */
+    margin: auto auto;
+    background-image: url(NewAssets/question-mark.svg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.WebArticle p{
+    margin-left: 10%;
+       font-weight: 300;
+    font-size: medium;
+    font-family: 'Alfa Slab One', cursive;
+}
+.WebClientele{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.AboutUsHeading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.AboutUsHeading p{
+    font: 900;
+    font-size: x-large;
+    font-family: 'Alfa Slab One', cursive;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.AboutUs p{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.Strategic p{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.MissionHeading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.MissionHeading p{
+    font: 900;
+    font-size: x-large;
+    font-family: 'Alfa Slab One', cursive;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.Mission2 p{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.Email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Email img{
+    margin-right: 5%;
+}
+.Email2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Email2 img{
+    margin-right: 5%;
+}
+.Cell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Cell img{
+    margin-right: 5%;
+}
+@media (max-width:380px){
+    .Right{
+    width:150px;
+    aspect-ratio: 1/1;
+    }
+    .AntiVirusImage{
+        width: 150px;
+    }
+
+}
+@media(max-width:1000px){
+    .ServicesText{
+    width: 50%;
+    }
+}
+@media(max-width:600px){
+    .ServicesText{
+    width: 70%;
+    }
+    .AntiVirusImage{
+        width: 170px;
+    }
+
+}
+@media(min-width:600px){
+        .CardWrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'Wordpress Custom'
+        ;
+    }
+    .CustomCard{
+        grid-area: Custom;
+        height: 75%;
+    }
+    .WordpressCard{
+        grid-area: Wordpress;
+        height: 75%
+    }
+}
+@media(max-width:400px){
+    .ServicesText{
+    width: 90%;
+    }
+}
+@media(min-width:501px){
+    #Menu{
+        display: none;
+    }
+
+}
+@media(max-width:500px){
+    .Nav{
+        display: none;
+    }
+
+}
+
+@media (max-width:600px) {
+    .Intro{
+    width: max;
+    height: 50vh;
+    /* border: 2px solid black; */
+    position: relative;
+    display: block;
+}
+
+    .IntroLeft{
+        width: max;
+        z-index: 3;
+    }
+    .IntroRight{
+        position: absolute;
+        bottom: -30%;
+        right: 0;
+    }
+
+    .ServicesContainer{
+    width: 80%;
+    height: 90%;
+    margin: auto auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Services{
+    height: 120vh;
+}
+.Box1,.Box2,.Box3{
+    width: 80%;
+    height: 28%;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 8px 6px rgba(89, 89, 89, 0.5);
+    position: relative;
+}
+.WhyUs{
+    width: max;
+    height: 60vh;
+}
+}
+@media(min-width:1000px){
+    .LicenseContainer1, .AntivirusContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .Docs{
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.LicenseImage{
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin-left: 0;
+    margin-bottom: 10%;
+}
+.LicenseText{
+    font-weight: 600;
+    margin-left: 0;
+}
+
+}
