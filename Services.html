@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | AM Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Services.css">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="icon" href="assets/logoV2.svg" type="image/svg+xml">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body>
+    <div class="MobileNav">
+        <div class="Mobile-links">
+            <div class="Services-Mobile-Link">
+            <a href="Services.html" class="nav-link"><span>Services</span></a>
+            </div>
+            <div class="Services-Mobile-Link">
+            <a href="contact.html" class="nav-link"><span>Contact</span></a>
+            </div>
+            
+        </div>
+    </div>
+<!-- TopNavBar -->
+<header class="header">
+  <nav class="nav-container">
+    <div class="logo-area">
+        <div class="Logo">
+
+        </div>
+      <span class="logo-text">AM Systems</span>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" id="ServicesLink" href="#">Services</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+    <div class="Nav-Right">
+    <button class="btn-primary btn-get-started" onclick="GoToForm()">
+      Get Started
+    </button>
+    
+        <div class="Menu" onclick="toggleMobileNav()">
+
+        </div>
+    </div>
+  </nav>
+</header>
+
+<main class="main-content">
+  <!-- Section 1: Pricing/Starter Package -->
+  <section class="section-container">
+    <div class="pricing-grid">
+      <div class="pricing-info">
+        <h1 class="pricing-title">Website Starter Package</h1>
+        <p class="pricing-description">
+          This is the perfect package for businesses who don't have websites and are relying on WhatsApp, Facebook, TikTok, and Instagram. Establish your credibility today.
+        </p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="material-symbols-outlined check-icon">check_circle</span>
+            <span>Includes 3 pages (Home, Services/Gallery, Contact)</span>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-card">
+        <span class="price-label">One-time development fee</span>
+        <span class="price-value">R400</span>
+        <button class="btn-primary btn-claim" onclick="GoToForm()">Purchase</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Features -->
+  <section class="section-container border-top">
+    <div class="section-header">
+      <h2 class="section-title">What's Included?</h2>
+      <p class="section-subtitle">Comprehensive digital solutions built into every deployment.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="material-symbols-outlined feature-icon">terminal</span>
+        <h3 class="feature-title">Development</h3>
+        <p class="feature-description">Clean, modular code built for performance and scalability from day one.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined feature-icon">rocket_launch</span>
+        <h3 class="feature-title">Deployment</h3>
+        <p class="feature-description">Hassle-free hosting setup on secure, high-speed global infrastructure.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined feature-icon">search</span>
+        <h3 class="feature-title">Basic SEO</h3>
+        <p class="feature-description">Metadata and structural optimization to ensure your business is discoverable.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined feature-icon">devices</span>
+        <h3 class="feature-title">Mobile-first</h3>
+        <p class="feature-description">Fluid layouts that look perfect on iPhones, Androids, and large desktops.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined feature-icon">chat</span>
+        <h3 class="feature-title">WhatsApp</h3>
+        <p class="feature-description">Direct click-to-chat integration to turn visitors into instant leads.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Optional Extras -->
+  <section class="extras-section">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Optional Extras</h2>
+        <p class="section-subtitle">Enhance your digital presence with these powerful add-ons.</p>
+      </div>
+      <div class="extras-grid">
+        <div class="extra-item">
+          <span class="material-symbols-outlined extra-icon">mail</span>
+          <div>
+            <h4 class="extra-title">Email Forms</h4>
+            <p class="extra-description">Custom contact forms connected directly to your professional inbox.</p>
+          </div>
+        </div>
+        <div class="extra-item">
+          <span class="material-symbols-outlined extra-icon">smart_toy</span>
+          <div>
+            <h4 class="extra-title">AI Chatbot</h4>
+            <p class="extra-description">Integrated AI logic to answer customer queries 24/7 without intervention.</p>
+          </div>
+        </div>
+        <div class="extra-item">
+          <span class="material-symbols-outlined extra-icon">dashboard_customize</span>
+          <div>
+            <h4 class="extra-title">Custom Tools</h4>
+            <p class="extra-description">Specific functional modules like booking systems or private portals.</p>
+          </div>
+        </div>
+        <div class="extra-item">
+          <span class="material-symbols-outlined extra-icon">build</span>
+          <div>
+            <h4 class="extra-title">Maintenance</h4>
+            <p class="extra-description">Ongoing security updates and content changes for peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Portfolio -->
+  <section class="section-container">
+    <div class="portfolio-header">
+      <h2 class="section-title">This portfolio should help you visualize what you can expect.</h2>
+      <p class="section-subtitle">Modern, high-performance interfaces tailored for business efficiency.</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-main">
+        <img class="portfolio-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB83p9bCEnF2Ow8IKtCs48bWMAQ-elwx6VH3qPu05fsDpPGYWqCEhYObDOBQYQqV-AINCWsSJD7ssN5_bUXr1OqVWb0Zn5Zo_OA9_pFO0OB9HiMh6CiI0rI6nIHPGJ8JfKF084uelKt6Zk1fYQF22vZt0UPG6MfhR__LcBVz2PQ9BZlB9dqscdmnRCDEV3PYRmUSEAIVfoMce7PsQ_FvWmIcvm-iUYHygbeiE_j3nr2sGePDQlqwY4S2DGww1_STWpnyeI6rtp5L1Q" alt="Dashboard preview">
+      </div>
+      <div class="portfolio-mockup">
+        <div class="phone-mockup">
+          <img class="mockup-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJwkPMYmi5BoCK7H7SfoDH0d-JdPC3FQ1iGM-o3ycUIbKxjnEqGszhl25trSFwKVAeJLQwZCCPVPkDXKi1dbpEjXY2o4GU5bcEfJVAaneVlIMgjCUO9k2IXtWtYZETU5fiUQiAfRd-ejQz2wuou2wxN66xt2amCKiA-MPsfHxnxxokL4cGqLTSvl665pozWk3_5ClPoN-_B_k88Z8RZnzbcKUaySt9CqxguaCimve8ju03yFUb3j3HB8fQeqGKsMg_Qgw-FsOkYzE" alt="Mobile preview">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CTA -->
+  <section class="section-container cta-section">
+    <div class="cta-card">
+      <h2 class="cta-title">Let's Establish your online presence.</h2>
+      <p class="cta-description">Join dozens of local businesses moving from social media profiles to professional, high-converting websites.</p>
+      <button class="btn-secondary" onclick="GoToForm()">Visit the Contact Page</button>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <span class="footer-logo">AM Systems</span>
+        <p class="footer-text">
+          Empowering South African small businesses with professional and affordable web solutions.
+        </p>
+        <p class="footer-copyright">
+          © 2024 AM Systems. Pretoria, South Africa.
+        </p>
+      </div>
+      
+      <!-- Contact Column -->
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <div class="contact-item">
+          <span class="material-symbols-outlined icon-small">location_on</span>
+          <span class="contact-text">579 peerboom street, Pretoria, South Africa</span>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined icon-small">call</span>
+          <span class="contact-text">060 310 6396</span>
+        </div>
+        <div class="contact-item email-group">
+          <span class="material-symbols-outlined icon-small">mail</span>
+          <div class="email-list">
+            <span class="contact-text">contact@amsystem.co.za</span>
+            <span class="contact-text">andile@amsystem.co.za</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Links Column -->
+      <div class="footer-links">
+        <h3 class="footer-heading">Legal</h3>
+        <a class="footer-link" href="#">Privacy Policy</a>
+        <a class="footer-link" href="#">Terms of Service</a>
+        <a class="footer-link" href="#">Service Level Agreement</a>
+        <a class="footer-link" href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
