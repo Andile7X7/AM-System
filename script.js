@@ -21,7 +21,7 @@
     })
 
     function GoToForm(){
-    window.location.href = 'Contact.html'
+    window.location.href = 'contact.html'
     }
 
 
@@ -33,6 +33,19 @@ console.log('style is:' + modal.style.display)
 
   form.addEventListener("submit", function(event) {
     event.preventDefault(); // prevent page reload
+
+    const name = form.querySelector("[name='name']").value.trim();
+    const email = form.querySelector("[name='email']").value.trim();
+    const message = form.querySelector("[name='message']").value.trim();
+    const phone = form.querySelector("[name='cellphone']").value.trim();
+    const business = form.querySelector("[name='business_type']").value.trim();
+    console.log(name, email, message, phone, business)
+
+
+  if (!name || !email || !message || !phone || !business) {
+    window.alert("Please fill in all fields before submitting.");
+    return; // stop here, don't send
+  }
 
     emailjs.sendForm("service_6xcqdpr", "template_gybxhdf", this)
       .then(function() {

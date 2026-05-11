@@ -262,9 +262,15 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
   color: #c0c7d4;
   text-decoration: none;
+  font-family: 'Geist', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
   transition: color 0.2s;
   cursor: pointer;
+  padding: 4px 0;
 }
+
 
 .nav-link:hover {
   color: #a2c9ff;
